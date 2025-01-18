@@ -1,0 +1,82 @@
+body{
+margin: 50px;
+background: linear-gradient(90deg, rgba(111, 111, 111, 0.3) 0%, rgb(154, 225, 194) 100%);
+}
+
+button{
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.inputTable{
+    width: 240px;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgb(107, 212, 166) 100%);
+    border: 3px solid rgb(0, 134, 90);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+
+.inputTableInput{
+    border-radius: 4px;
+}
+
+.cardContent {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.noteCard {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgb(107, 212, 166) 100%);
+    border: 3px solid rgb(0, 134, 90);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px;
+}
+
+.noteCardTrash {
+
+    border: 3px solid rgb(238, 79, 39);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(238, 153, 83, 0.5) 100%);
+}
+
+.noteCardArchive {
+
+    border: 3px solid rgb(115, 39, 238);
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.3) 0%, rgba(200, 143, 246, 0.434) 100%);
+}
+
+.noteCardTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+.noteCardContent {
+    font-size: 16px;
+}
+
+.noteCardButtons {
+    display: flex;
+    padding-bottom: 6px;
+}
+
+.noteCardButton {
+    margin-right: 10px;
+    margin-left: 10px;
+}

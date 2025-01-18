@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+
+    <script src="./script.js"></script>
+    <script src="./scripts/localstorage.js"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/events.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+
+<body onload="init()">
+    <div class="inputTable">
+        <h1>Notizblock</h1>
+        <label>title: </label>
+        <input id="note_title_input" class="inputTableInput" type="text" required><br>
+        <label>note: </label>
+        <input id="note_input" class="inputTableInput" type="text" required>
+        <button id="myBtn" onclick="getNote()">Add Note</button>
+    </div>
+
+
+    <div class="cardContent">
+        <h2>Notes</h2>
+        <div class="flexWrapedCards">
+            <div id="content" class="cards">
+            </div>
+        </div>
+        <h2>Archiv</h2>
+        <div class="flexWrapedCards">
+            <div id="archive_content" class="cards">
+            </div>
+        </div>
+        <h2>Trash</h2>
+        <div class="flexWrapedCards">
+            <div id="trash_content" class="cards">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
